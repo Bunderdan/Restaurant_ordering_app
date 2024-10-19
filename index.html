@@ -1,0 +1,87 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-image">
+                <h1>Jimmy's Dinner</h1>
+                <h2>The  best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <main>
+
+            <!-- HERE RENDER DATA -->
+
+            <div id="menu-element"></div>
+            
+            <!-- YOUR ORDER, TOTAL PRICE AND COMPLETE BTN HIDDEN SECTION -->
+
+            <section class="your-order hide" id="your-order">
+                <div>
+                    <div>
+                        <h3 class="order-header">Your order</h3>
+                    </div>
+                
+                    <div id="items-in-order"></div>
+    
+            <!-- HERE ADD ITEMS INTO CART -->
+    
+                    <div class="total-price">
+                        <div class="checkout">
+                            <h3>Total price</h3>
+                            <div>
+                                <h4 id="total-price"></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div id="oder-btn">
+                        <button class="complete-order-btn" id="complete-order-btn">
+                            Complete order
+                        </button>
+                    </div>
+            </section>
+
+        <!-- POP-UP HIDDEN SECTION -->
+
+            <section class="pop-up hide" id="pop-up">
+                <form id="form">
+                    <label>Enter card details</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required
+                        >
+                    <input
+                        type="number"
+                        id="card-number"
+                        name="card-number"
+                        placeholder="Enter card number"
+                        required
+                        >
+                    <input
+                        type="number"
+                        maxlength = "3"
+                        id="cvv"
+                        name="cvv"
+                        placeholder="Enter CVV"
+                        required
+                        >
+                    <input
+                        type="submit"
+                        id="submit-btn"
+                        value="Pay">
+                </form>
+            </section>
+            
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
